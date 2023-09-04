@@ -7,9 +7,10 @@
 .container {
   display: grid;
   grid-template-columns: 30% 1fr;
-  grid-template-rows: 0 6.25em auto 3.75em;
+  grid-template-rows: 0 300px 6.25em auto 3.75em;
   background-color: lightpink;
   min-height: 100vh;
+  transition: 1s;
 }
 
 .super-virs-headers {
@@ -35,13 +36,15 @@ main {
 
 header {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 nav {
+  grid-column-start: 1;
+  grid-column-end: 3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +55,13 @@ nav {
     width: 130px;
     text-transform: uppercase;
 
+    & a {
+      text-decoration: none;
+      color: #111;
+    }
+
     &:hover {
+      color: rgb(204, 36, 36);
       font-weight: 700;
       cursor: pointer;
     }

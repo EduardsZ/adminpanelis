@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const superHeaders = document.getElementsByClassName("container")[0]; // [][0] = undefined => undefined.style neeksistē
 
   setTimeout(() => {
-    superHeaders.style.gridTemplateRows = "2em 6.25em auto 3.75em";
+    superHeaders.style.gridTemplateRows = "2em 300px 6.25em auto 3.75em";
   }, 3000);
 
   // DOM: Document Object Model
 
   superHeaders.addEventListener("click", () => {
-    superHeaders.style.gridTemplateRows = "0 6.25em auto 3.75em";
+    superHeaders.style.gridTemplateRows = "0 300px 6.25em auto 3.75em";
   });
 });
 
